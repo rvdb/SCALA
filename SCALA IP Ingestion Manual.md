@@ -5,8 +5,8 @@ This manual provides step-by-step instructions for getting your archival data in
 |Definition||
 |----|----|
 |TS|Transfer Set.</br>Folder containing all archival materials that are to be converted to an AIP.|
-|SIP|Submission Information Package.</br>An E-ARK conform set of files that is offered to the e-depot.</br>A content producer creates one SIP from one TS.|
-|AIP|Archival Information Package.</br>An E-ARK conform structure that stores the files in the SIP in the e-depot.|
+|SIP|Submission Information Package.</br>An E-ARK compliant set of files that is offered to the e-depot.</br>A content producer creates one SIP from one TS.|
+|AIP|Archival Information Package.</br>An E-ARK compliant structure that stores the files in the SIP in the e-depot.|
 |RODA-In|SIP creation software by KEEP SOLUTIONS.|
 |RODA|AIP (re)ingestion browser tool by KEEP SOLUTIONS.|
 |meemoo|Long term archival storage provider.|
@@ -32,7 +32,7 @@ over it.
 |Create and add a descriptive metadata file to your TS [optional]|Create a metadata XML-file which follows the instructions at Add descriptive metadata.|
 |Create and add additional non-xml metadata [optional]|Create a folder called “_submissionDocumentation” in the root of the TS.</br><span title="E.g. file format identification files, file lists, etc."><i>Add additional non-xml metadata accompanying the content files</i></span>|
 
-Advise: export niche formats / system dependant formats (e.g. google docs / google slides) to generic ones if possible. They need to be exported from that system using the most adequate formats, which may be complex on its own depending on if you want trueness to the original aspect (where you might use PDF to ensure fonts and layout are preserved) or you want reusability (where you might use Microsoft Office and/or OpenOffice formats to ensure files are editable). Also, you could download the same information in several formats and add all to the same SIP as alternative representations.
+Advice: export niche formats / system dependent formats (e.g. google docs / google slides) to generic ones if possible. They need to be exported from that system using the most adequate formats, which depend on the aim of the preservation effort, whether focusing on preservation of the original aspect (where you might use PDF to ensure fonts and layout are preserved) or want reusability (where you might use Microsoft Office and/or OpenOffice formats to ensure files are editable). Also, you could download the same information in several formats and add all to the same SIP as alternative representations.
 
 #### Extra <span title="With RODA-In, you can create basic SIPs for ingest into the SCALA repository. All Roda-In does is to create a descriptive metadata file with a METS-file, preserving fixity. You might want to do other steps before ingest. We give a short overview of these with the different options about the way with which you can achieve this. Bear in mind integrated pre-ingest tools like RMtool exist for more intensive pre-ingest operations."><i>data preparation tasks</i></span>
 
@@ -64,7 +64,7 @@ If you are on Mac or Linux, you have to install the “tree” app. Windows has 
 |----|---------|
 |Install the “tree” app|Install on Mac</br>Open a terminal and run:</br><code>brew install tree</code></br></br>Install on Linux</br>Open a terminal and run:</br><code>sudo apt update && sudo apt-get install tree|
 
-<span title="We may add more options for creating filelists/filetrees at a later stage: Create filelist using Treesize; Create filelist using Python os.module; + filelist / treetool in Bitcurator. Partners can add their own preferred methods. You can also create a filelist of the whole archive and include this in the documentation folder."><i>You can create a filelist and filetree for the root folder you are in using option 1. Alternatively, if you want to create filelists and filetrees for many TS’ at once, please follow option 2.</i></span>
+<span title="We may add more options for creating filelists/filetrees at a later stage: Create filelist using Treesize; Create filelist using Python os.module; + filelist / treetool in Bitcurator. Partners can add their own preferred methods. You can also create a filelist of the whole archive and include this in the documentation folder."><i>You can create a filelist and filetree for the root folder you are in using option 1. Alternatively, if you want to create filelists and filetrees for many TSes at once, please follow option 2.</i></span>
 	
 |Task|Win10|Mac/Linux|
 |----|-----|---------|
@@ -101,7 +101,7 @@ Make sure you install and configure RODA-In according to the [RODA-In Installati
 
 |Task||
 |----|-----|
-|Using your repository classification scheme|You can download the AIP structural information from your repository. This is called the classification scheme. To use the classification scheme, go to RODA menu Ingest > Pre-ingest and download the classification scheme.</br>![image](https://user-images.githubusercontent.com/87436774/153401950-526493a0-3d97-4f13-ae4d-e2f15c316d46.png)</br>Then you can for example load it into RODA-In, and then you can drag'n'drop SIPs to a specific node under your organization.</br>![image](https://user-images.githubusercontent.com/87436774/153402235-de857e98-f0ce-4568-9ac9-5de7af76ce01.png)</br>Click the load button in RODA-In and then select the classification scheme json file you downloaded from RODA.|
+|Using your repository classification scheme|You can download the AIP structural information from your repository. This is called the classification scheme. To use the classification scheme, go to RODA menu Ingest > Pre-ingest and download the classification scheme.</br>![image](https://user-images.githubusercontent.com/87436774/153401950-526493a0-3d97-4f13-ae4d-e2f15c316d46.png)</br>Then you can for example load it into RODA-In, and then you can drag and drop SIPs to a specific node under your organization.</br>![image](https://user-images.githubusercontent.com/87436774/153402235-de857e98-f0ce-4568-9ac9-5de7af76ce01.png)</br>Click the load button in RODA-In and then select the classification scheme json file you downloaded from RODA.|
 
 
 
